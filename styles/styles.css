@@ -207,3 +207,15 @@ section {
 	text-align: justify;
 	line-height: 32px;
 }
+
+.contact_details {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	padding: 0 100px 0 100px;
+}
+
+.contact_details h3 {
+	font-size: 24px;
+	letter-spacing: 2px;
+}
