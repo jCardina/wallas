@@ -11,7 +11,7 @@ body, html {
 	width: 100%;
 	/*font-family: Arial, Helvetica, sans-serif;*/
 	font-family: 'Roboto', sans-serif;
-
+	color: #060A24;
 
 }
 
@@ -21,9 +21,13 @@ a {
 	color: #060A24;
 }
 
+h1 {
+	font-size: 50px;
+}
+
 
 .nav {
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15); /*soporte de alpha en IE y Edge*/
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
 	text-align: right;
 	height: 75px;
 	line-height: 75px;
@@ -92,12 +96,6 @@ label {
 	color: rgba(37,151,204,0.56); /*soporte de alpha en IE y Edge*/
 	text-decoration: line-through;
 }
-
-
-
-
-
-
 
 
 
@@ -175,7 +173,7 @@ h2 {
 	font-size: 42px;
 	color: #333544;
 	text-align: center;
-	margin: 120px 0 80px 0;
+	margin: 0 0 80px 0;
 }
 
 .services h3 {
@@ -186,4 +184,26 @@ h2 {
 	display: block;
 	max-width: 300px;
 	text-align: center;
+}
+
+section {
+	padding-top: 50px;
+	margin-top: 70px; 
+	padding-bottom: 80px;
+}
+
+#nosotros {
+	/*background-color: #e6e7f5;*/
+	background-color: rgba(230, 231, 245,0.5);
+	padding-bottom: 120px;
+
+}
+
+.about_us {
+	padding: 0 150px 0 150px;
+}
+
+.about_us p {
+	text-align: justify;
+	line-height: 32px;
 }
