@@ -195,6 +195,7 @@ section {
 #nosotros {
 	/*background-color: #e6e7f5;*/
 	background-color: rgba(230, 231, 245,0.5);
+	/*background-color: rgba(20,121,144,0.75);*/
 	padding-bottom: 120px;
 
 }
@@ -212,10 +213,59 @@ section {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
-	padding: 0 100px 0 100px;
+	padding: 0 100px 80px 100px;
+
 }
 
 .contact_details h3 {
 	font-size: 24px;
 	letter-spacing: 2px;
+}
+
+.contact_details i {
+	color: #147990;
+}
+
+.footer {
+	background-color: rgba(230, 231, 245,0.5);
+	/*background-color: rgba(20,121,144,0.75);*/
+	height: 75px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	-ms-flex-align: center;
+	align-content: center;
+}
+
+
+.copyright {
+	margin-left: 5%;
+	font-size: 14px;
+	width: 40%;
+}
+
+
+.social_media {
+	width: 100px;
+	margin-right: 5%;
+	font-size: 18px;
+}
+
+
+
+.social_media ul {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+
+.social_media ul li {
+	list-style: none;
+}
+
+
+footer i:hover {
+	color: #2597cc;
 }
