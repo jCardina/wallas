@@ -10,6 +10,25 @@ let toggleHamMenu = document.getElementById("menuBtn").addEventListener("click",
 	this.classList.toggle("change");
 	document.getElementById("menu").classList.toggle("open");
 
-	// cerrar menu clickeando en links
-
 });
+
+
+let closeMenuOnSelection = function () {
+
+	let menuBtn = document.getElementById("menuBtn");
+	let items = document.getElementsByClassName("menuItem");
+
+	for (i = 0; i < items.length; i++) {
+		
+		items[i].addEventListener("click", function(event) {
+
+			menuBtn.classList.remove("change");
+			document.getElementById("menu").classList.remove("open");
+
+		});
+	}
+}
+
+closeMenuOnSelection();
+
+// cerrar menu click afuera
