@@ -74,37 +74,26 @@ and (max-width: 768px) {
 	}
 
 
-	/*.logo {
-		line-height: 24px;
+	.logo {
+	
 		height: 50px;
-		left: 5%;
+		/*left: 5%;*/
 	}
 
 
 	.logo img {
-		height: 24px;
-		width: 24px;
-		position: relative;
-		top: 50%;
-		transform: translateY(-12px);
-		-webkit-transform: translateY(-12px);
-	    -ms-transform: translateY(-12px);
-	}*/
+		height: 50px;
+		
+	}
 	
 
 	.menuBtn {
 		display: block;
 		cursor: pointer;
-		/*font-size: 24px;*/
-		/*line-height: 50px;*/
 		left: calc(100% - 70px);
 		top: 14.5px;
 	}
 
-
-	/*label::selection {
-		background: #FFFFFF00;
-	}*/
 
 
 	.menu {
@@ -116,7 +105,8 @@ and (max-width: 768px) {
 		height: 0px;
 		transition: height 1s;
 		top: 50px;
-		overflow: hidden;	
+		overflow: hidden;
+		margin-right: 0px;	
 	}
 
 
@@ -139,26 +129,12 @@ and (max-width: 768px) {
 		color: #FFFFFF;
 	}
 
-/*
-	#close {
-		display: none;	
-	}*/
-
 
 	.menu.open {
 		display: flex;
 		flex-flow: column nowrap;
 		height: 180px;
 	}
-
-	
-	/*.toggle:checked + div #open {
-		display: none;
-	}
-
-	.toggle:checked + div #close {
-		display: block;
-	}*/
 
 
 	/*h1 {
@@ -201,42 +177,8 @@ and (max-width: 768px) {
 	}*/
 
 	
-	/*.three {
-		flex-flow: column nowrap;
-	}*/
 
-
-	/*.three div {
-		width: 100%;
-	}*/
-	
-
-	/*.telefono {
-		padding-left: 0vw;
-	}
-
-
-	.telefono img {
-		display: block;
-		margin: auto;
-		margin-bottom: -50px;
-	}
-
-
-	.nosotros {
-		padding: 0% 5% 15% 5%;
-	}*/
-	
-
-	/*.galeria > div {
-		flex-basis: 50%;
-	}
-
-	
-	.lista-temas {
-		margin: 0% 10% 0% 10%;
-	}
-
+	/*
 
 	.copyright {
 		width: 100%;
@@ -252,7 +194,7 @@ and (max-width: 768px) {
 	}*/
 
 }
-/*
+
 
 @media only screen
 and (max-width: 768px)
@@ -262,7 +204,7 @@ and (hover: none) {
 		background-color: #2597cc;
 	}
 
-}*/
+}
 
 
 /*@media only screen
