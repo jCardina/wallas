@@ -139,10 +139,10 @@ and (max-width: 768px) {
 		color: #FFFFFF;
 	}
 
-
+/*
 	#close {
 		display: none;	
-	}
+	}*/
 
 
 	.menu.open {
@@ -161,7 +161,7 @@ and (max-width: 768px) {
 	}*/
 
 
-	h1 {
+	/*h1 {
 		font-size: 40px;
 		margin-left: 5%;
 		max-width: 80%;
@@ -174,9 +174,9 @@ and (max-width: 768px) {
 		margin-left: 5%;
 		max-width: 90%;
 	}
+*/
 
-
-	.botones a {
+	/*.botones a {
 		font-size: 16px;
 	}
 
@@ -198,17 +198,17 @@ and (max-width: 768px) {
 		font-size: 36px;
 		margin-left: 5%;
 		max-width: 95%;
-	}
+	}*/
 
 	
-	.three {
+	/*.three {
 		flex-flow: column nowrap;
-	}
+	}*/
 
 
-	.three div {
+	/*.three div {
 		width: 100%;
-	}
+	}*/
 	
 
 	/*.telefono {
