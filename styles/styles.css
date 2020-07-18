@@ -15,6 +15,46 @@ body, html {
 
 }
 
+.menuBtn {
+	height: 21px;
+	width: 30px;
+	margin: auto;
+	position: absolute;
+	display: none;
+	/*top: 100px;	*/
+}
+
+.one, .two, .three {
+	height: 3px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50px;
+	transition: 0.2s linear;
+	margin: 6px 0;
+}
+
+.one {
+	margin-top: 0px;
+}
+
+
+
+
+.change .one {
+	transform: rotate(-45deg) translate(-4px, 10px);
+
+}
+
+
+.change .two {
+	opacity: 0;
+}
+
+.change .three {
+	transform: rotate(45deg) translate(-2px, -10px);
+
+}
+
 
 a {
 	text-decoration: none;
