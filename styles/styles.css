@@ -12,17 +12,29 @@ body, html {
 	/*font-family: Arial, Helvetica, sans-serif;*/
 	font-family: 'Roboto', sans-serif;
 	color: #060A24;
+	overflow-x: hidden;
 
 }
 
 .menuBtn {
-	height: 21px;
-	width: 30px;
+	height: 25px;
+	width: 34px;
 	margin: auto;
 	position: absolute;
 	display: none;
+	border: none;
+	background-color: transparent;
+	outline: 0px;
 	/*top: 100px;	*/
 }
+
+/*.menuBtn:hover {
+	outline: 2px solid transparent;
+}
+
+.menuBtn:active {
+	outline: 2px solid transparent;
+}*/
 
 .one, .two, .three {
 	height: 3px;
