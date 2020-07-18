@@ -84,6 +84,7 @@ and (hover: none) {
 	@media only screen
 	and (max-width: 768px) {
 
+
 		.nav {
 			height: 50px;
 			line-height: 50px;
@@ -93,6 +94,7 @@ and (hover: none) {
 		.logo {
 
 			height: 50px;
+			left: 20px;
 			/*left: 5%;*/
 		}
 
@@ -106,7 +108,7 @@ and (hover: none) {
 		.menuBtn {
 			display: block;
 			cursor: pointer;
-			left: calc(100% - 70px);
+			left: calc(100% - 50px);
 			top: 14.5px;
 		}
 
@@ -236,13 +238,7 @@ and (hover: none) {
 	@media only screen
 	and (max-width: 660px) {
 
-		.logo {
-			left: 20px;
-		}
-
-		.menuBtn {
-			left: calc(100% - 50px);
-		}
+		
 
 		.services {
 			/*flex-flow: row wrap;*/
