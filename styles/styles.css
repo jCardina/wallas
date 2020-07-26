@@ -39,6 +39,7 @@ body, html {
 .one, .two, .three {
 	height: 3px;
 	width: 30px;
+	display: block;
 	background-color: black;
 	border-radius: 50px;
 	transition: 0.2s linear;
