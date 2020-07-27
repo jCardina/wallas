@@ -31,4 +31,4 @@ let closeMenuOnSelection = function () {
 
 closeMenuOnSelection();
 
-// cerrar menu click afuera
+// add auto-close menu

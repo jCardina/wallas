@@ -7,9 +7,7 @@
 }
 
 body, html {
-	/*height: 100%;*/
 	width: 100%;
-	/*font-family: Arial, Helvetica, sans-serif;*/
 	font-family: 'Roboto', sans-serif;
 	color: #060A24;
 	overflow-x: hidden;
@@ -25,16 +23,7 @@ body, html {
 	border: none;
 	background-color: transparent;
 	outline: 0px;
-	/*top: 100px;	*/
 }
-
-/*.menuBtn:hover {
-	outline: 2px solid transparent;
-}
-
-.menuBtn:active {
-	outline: 2px solid transparent;
-}*/
 
 .one, .two, .three {
 	height: 3px;
@@ -49,8 +38,6 @@ body, html {
 .one {
 	margin-top: 0px;
 }
-
-
 
 
 .change .one {
@@ -86,7 +73,6 @@ h1 {
 	line-height: 75px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
-	/*background-color: rgb(156, 190, 191);*/
 }
 
 
@@ -102,12 +88,6 @@ h1 {
 
 .logo img {
 	height: 75px;
-	/*width: 36px;*/
-/*	position: relative;
-	top: 50%;
-	transform: translateY(-18px);
-	-webkit-transform: translateY(-18px);
-	-ms-transform: translateY(-18px);*/
 }
 
 
@@ -146,7 +126,7 @@ label {
 
 
 .menu a:active {
-	color: rgba(37,151,204,0.56); /*soporte de alpha en IE y Edge*/
+	color: rgba(37,151,204,0.56);
 	text-decoration: line-through;
 }
 
@@ -154,7 +134,6 @@ label {
 
 .hero-image {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/noom-peerapong-2uwFEAGUm6E-unsplash.jpg");
-	/*height: 50%;*/
 	height: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -175,7 +154,6 @@ label {
 .hero-text p {
 	padding-top: 30px;
 	padding-bottom: 50px;
-
 }
 
 .hero-text button {
@@ -197,7 +175,6 @@ label {
 .hero-text button:hover {
 	background-color: rgba(37,151,204,0.7);
 	color: white;
-
 }
 
 .services {
@@ -209,7 +186,6 @@ label {
 }
 
 .services div {
-	/*width: 30%;*/
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -246,9 +222,7 @@ section {
 }
 
 #nosotros {
-	/*background-color: #e6e7f5;*/
 	background-color: rgba(230, 231, 245,0.5);
-	/*background-color: rgba(20,121,144,0.75);*/
 	padding-bottom: 120px;
 
 }
@@ -267,7 +241,6 @@ section {
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	padding: 0 100px 80px 100px;
-
 }
 
 .contact_details h3 {
@@ -281,7 +254,6 @@ section {
 
 .footer {
 	background-color: rgba(230, 231, 245,0.5);
-	/*background-color: rgba(20,121,144,0.75);*/
 	height: 75px;
 	display: flex;
 	flex-flow: row wrap;
