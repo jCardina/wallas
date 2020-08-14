@@ -1,4 +1,28 @@
 @media only screen
+and (hover: none) {
+
+	.hero-text button:hover {
+		background-color: rgb(37,151,204);
+	}
+
+	.hero-text button:active {
+		background-color: rgba(37,151,204,0.7);
+	}
+
+	.menu a:hover {
+		color: #060A24;
+		text-decoration: none;
+	}
+
+	.menu a:active {
+		color: rgba(37,151,204,0.56);
+		text-decoration: line-through;
+	}
+
+}
+
+
+@media only screen
 and (max-width: 999px) {
 
 	.services h3 {

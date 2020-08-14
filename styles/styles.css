@@ -162,7 +162,7 @@ label {
 	display: inline-block;
 	padding: 16px 50px;
 	color: #FFFFFF;
-	background-color: rgba(37,151,204);
+	background-color: rgb(37,151,204);
 	border-radius: 10px;
 	text-align: center;
 	cursor: pointer;
@@ -174,7 +174,6 @@ label {
 
 .hero-text button:hover {
 	background-color: rgba(37,151,204,0.7);
-	color: white;
 }
 
 .services {
