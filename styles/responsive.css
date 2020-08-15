@@ -27,6 +27,7 @@ and (max-width: 999px) {
 
 	.services h3 {
 		font-size: 18px;
+		text-align: center;
 	}
 
 	.contact_details {
@@ -38,7 +39,7 @@ and (max-width: 999px) {
 	}
 
 	.services div {
-		padding: 0 10px 50px 10px;
+		padding: 24px 10px 50px 10px;
 	}
 
 	.hero-text h1 {
@@ -47,6 +48,10 @@ and (max-width: 999px) {
 
 	p {
 		font-size: 14px;
+	}
+
+	.services .moreInfo {
+		font-size: 12px;
 	}
 
 
@@ -227,7 +232,7 @@ and (max-width: 500px) {
 	}
 
 	.contact_details h3 {
-		font-size: 12px;
+		font-size: 18px;
 	}
 
 	.footer {

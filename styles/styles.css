@@ -195,7 +195,62 @@ label {
 	border-radius: 20px;
 	transition: all 0.5s;
 	overflow: hidden;
-	height: 250px;
+	height: 280px;
+	/*opacity: 0;*/
+	/*transition: opacity 0.5s ease-in;*/
+	/*animation: pop-in 0.5s ease-in;*/
+}
+
+.services div:nth-child(1) {
+	animation: pop-in 0.5s ease-in;
+
+}
+
+.services div:nth-child(2) {
+	/*opacity: 0;*/
+	animation: pop-in 0.8s ease-in;
+
+}
+
+.services div:nth-child(3) {
+	/*opacity: 0;*/
+	animation: pop-in 1.2s ease-in;
+
+}
+
+.services div:nth-child(4) {
+	/*opacity: 0;*/
+	animation: pop-in 1.6s ease-in;
+
+}
+
+.services div:nth-child(5) {
+	/*opacity: 0;*/
+	animation: pop-in 2s ease-in;
+
+}
+
+.services div:nth-child(6) {
+	/*opacity: 0;*/
+	animation: pop-in 2.4s ease-in;
+
+}
+
+.services div:nth-child(7) {
+	/*opacity: 0;*/
+	animation: pop-in 2.8s ease-in;
+
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    /*transform: translateY(-4rem) scale(.8);*/
+  }
+  100% {
+    opacity: 1;
+    /*transform: none;*/
+  }
 }
 
 .services div.selected {
@@ -213,12 +268,16 @@ label {
 
 .services div:hover {
 	cursor: pointer;
+	/*opacity: 1;*/
 }
 
 .services div:hover i {
 	color: #2597cc;
 }
 
+.services div:active i {
+	color: rgba(70,142,175,0.86);
+}
 
 .services .moreInfo {
 	padding: 0px 10px 10px 10px;
