@@ -190,15 +190,19 @@ label {
 	align-items: center;
 	/*padding-bottom: 80px;*/
 	/*padding-top: 34px;*/
-	padding: 34px 20px 80px 20px;
+	padding: 34px 20px 20px 20px;
 	/*transition: all 0.5s ease;*/
-    border-radius: 20px;
+	border-radius: 20px;
+	transition: all 0.5s;
+	overflow: hidden;
+	height: 250px;
 }
 
 .services div.selected {
 	background-color: #ebedff;
 	/*padding: 34px 20px 80px 20px;*/
-    margin-bottom: 40px;
+	margin-bottom: 40px;
+	height: 500px;
 }
 
 .services i {
@@ -215,25 +219,24 @@ label {
 	color: #2597cc;
 }
 
-.services div.moreInfo {
-	display: none;
-}
 
-.services div.moreInfo.selectedb {
-	display: flex;
-	padding: 34px 10px 0px 10px;
+.services .moreInfo {
+	padding: 0px 10px 10px 10px;
 	margin-bottom: 0px;
-}
-
-.moreInfo.selectedb p {	
 	text-align: justify;
 	font-size: 14px;
 	color: #000000;
+	display: none;
 }
 
-.moreInfo.selectedb p:first-child {
-	padding-bottom: 10px;
+.services .selected .moreInfo {
+	display: initial;
 }
+
+.services p:nth-child(4) {
+	padding-top: 34px;
+}
+
 
 h2 {
 	font-size: 42px;

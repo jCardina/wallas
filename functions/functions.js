@@ -28,15 +28,6 @@ let openServiceDetails = function() {
 			}
 
 			this.classList.toggle("selected");
-			// console.log(this.childNodes)
-
-			// for (j = 0; j < this.children.length; j++) {
-
-			// 	if (this.children[j].classList.contains("moreInfo")) {
-			// 		this.children[j].classList.toggle("selectedb");
-			// 		break;
-			// 	}        
-			// }
 
 		});
 	}
