@@ -19,6 +19,14 @@ and (hover: none) {
 		text-decoration: line-through;
 	}
 
+	.services div:hover i {
+		color: #147990;
+	}
+
+	.services div:active i {
+		color: rgba(70,142,175,0.86);
+	}
+
 }
 
 
