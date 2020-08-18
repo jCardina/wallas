@@ -112,16 +112,15 @@ window.addEventListener('scroll', ()=> {
 function isElementInViewport(element) {
 
 	let rect = element.getBoundingClientRect();
-	return (
-		(rect.top <= 0
-			&& rect.bottom >= 0)
-		||
+
+	let isInVP = (
+		(rect.top <= 0 && rect.bottom >= 0) ||
 		(rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-			rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-		||
-		(rect.top >= 0 &&
-			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+			rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
+		(rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
 		);
+
+	return isInVP;
 }
 
 
@@ -130,6 +129,6 @@ function isElementInViewport(element) {
 
 closeMenuOnSelection();
 openServiceDetails();
-// loop();
+
 
 // add auto-close menu

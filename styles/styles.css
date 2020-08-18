@@ -22,7 +22,6 @@ body, html {
 	display: none;
 	border: none;
 	background-color: transparent;
-	/*outline: 0px;*/
 }
 
 .one, .two, .three {
@@ -134,7 +133,6 @@ label {
 
 
 .hero-image {
-	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/noom-peerapong-2uwFEAGUm6E-unsplash.jpg");*/
 	height: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -194,7 +192,6 @@ label {
 
 .hero-text button {
 	border: none;
-	/*outline: 0;*/
 	display: inline-block;
 	padding: 16px 50px;
 	color: #FFFFFF;
@@ -226,16 +223,14 @@ label {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	/*padding-bottom: 80px;*/
-	/*padding-top: 34px;*/
 	padding: 34px 20px 20px 20px;
-	/*transition: all 0.5s ease;*/
 	border-radius: 20px;
 	transition: all 0.5s;
 	overflow: hidden;
 	height: 280px;
 	opacity: 0;
 	will-change: opacity;
+	cursor: pointer;
 }
 
 .services .is-visible {
@@ -299,11 +294,6 @@ label {
 	font-size: 84px;
 	color: #147990;
 	margin-bottom: 20px;
-}
-
-.services div:hover {
-	cursor: pointer;
-	/*opacity: 1;*/
 }
 
 .services div:hover i {

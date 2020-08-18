@@ -27,6 +27,10 @@ and (hover: none) {
 		color: rgba(70,142,175,0.86);
 	}
 
+	.services div, .hero-text button, button.menuBtn {
+		cursor: default;
+	}
+
 }
 
 
