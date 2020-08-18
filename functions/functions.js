@@ -8,6 +8,10 @@ document.getElementById("contactBtn").addEventListener("mousedown", function(eve
 	event.preventDefault();
 });
 
+document.getElementById("menuBtn").addEventListener("mousedown", function(event) {
+	event.preventDefault();
+});
+
 
 let toggleHamMenu = document.getElementById("menuBtn").addEventListener("click", function(event) {
 
@@ -95,14 +99,16 @@ function loop() {
 // Call the loop for the first time
 // loop();
 
-
 window.addEventListener('scroll', ()=> {
 
-	console.log("loop")
-	loop();
+	setTimeout(function() {
+		console.log("loop")
+		loop();
+	}, 50);
 });
 
 
+// Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(element) {
 
 	let rect = element.getBoundingClientRect();

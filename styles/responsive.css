@@ -142,7 +142,7 @@ and (max-width: 768px) {
 		margin: 0px;
 		padding-left: 5%;
 		color: #FFFFFF;
-		line-height: 60px					
+		line-height: 60px;
 	}
 
 
@@ -162,6 +162,7 @@ and (max-width: 768px) {
 		flex-flow: column nowrap;
 		height: 180px;
 	}
+
 
 	.contact_details {
 		flex-flow: row wrap;
