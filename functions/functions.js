@@ -129,6 +129,8 @@ function isElementInViewport(element) {
 
 closeMenuOnSelection();
 openServiceDetails();
+loop();
+window.addEventListener("resize", loop);
 
 
 // add auto-close menu
