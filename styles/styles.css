@@ -211,7 +211,7 @@ label {
 	background-color: rgba(37,151,204,0.7);
 }
 
-.services {
+.services, .bios {
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
@@ -219,18 +219,22 @@ label {
 	padding: 0 40px 0 40px;
 }
 
-.services div {
+.services div, .bios div {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	padding: 34px 20px 20px 20px;
 	border-radius: 20px;
-	transition: all 0.5s;
+}
+
+.services div {
 	overflow: hidden;
-	height: 280px;
 	opacity: 0;
 	will-change: opacity;
 	cursor: pointer;
+	height: 280px;
+	transition: all 0.5s;
+
 }
 
 .services .is-visible {
@@ -333,7 +337,7 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.services p {
+.services p, .bios p {
 	display: block;
 	max-width: 300px;
 	text-align: center;
@@ -358,6 +362,69 @@ section {
 .about_us p {
 	text-align: justify;
 	line-height: 32px;
+}
+
+#nosotros h3 {
+	text-align: center;
+	font-size: 38px;
+	margin-top: 80px;
+
+}
+
+.bios {
+	padding-top: 40px;
+}
+
+.bios div {
+	background-color: #FFFFFF;
+	/*margin-bottom: 40px;*/
+	padding-bottom: 30px;
+	/*flex-basis: 20%;*/
+	margin: 0px 10px 40px 10px;
+	opacity: 0;
+}
+
+.bios .is-visible {
+	opacity: 1;
+	animation: pop-in 1s forwards;
+}
+
+.profilePic {
+	border-radius: 50%;
+	height: 140px;
+}
+
+.bios h4 {
+	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.bios p {
+	font-size: 12px;
+	max-width: 220px;
+	margin-bottom: 16px;
+	/*text-align: left;*/
+}
+
+.bios button {
+	border: none;
+	display: inline-block;
+	padding: 10px 16px;
+	color: #FFFFFF;
+	background-color: rgb(37,151,204);
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 11px;
+}
+
+.bios button:hover {
+	background-color: rgba(37,151,204,0.7);
 }
 
 .contact_details {

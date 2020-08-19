@@ -80,7 +80,18 @@ let closeMenuOnSelection = function() {
 
 function loop() {
 
-	services.forEach(function (element) {
+	services.forEach(element => {
+		if (isElementInViewport(element)) {
+			element.classList.add('is-visible');
+		} else {
+			element.classList.remove('is-visible');
+		}
+	});
+
+
+	let profiles = Array.from(document.querySelectorAll("#biosCont div"));
+
+	profiles.forEach(element => {
 		if (isElementInViewport(element)) {
 			element.classList.add('is-visible');
 		} else {
@@ -123,6 +134,102 @@ function isElementInViewport(element) {
 	return isInVP;
 }
 
+// document.getElementById("more").addEventListener("click", function() {
+
+// 	window.open('./docs/placeholder-cv.pdf','_blank');
+
+// });
+
+
+let createProfiles = function() {
+
+	let container = document.getElementById("biosCont");
+
+
+	let profiles = [
+	{
+		name: "Natalia Tamini",
+		photo: "./images/placeholder.jpg",
+		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		cv: "./docs/placeholder-cv.pdf"
+	},
+	{
+		name: "Valentina Oliva",
+		photo: "./images/placeholder.jpg",
+		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		cv: "./docs/placeholder-cv.pdf"
+	},
+	{
+		name: "Camila Dulce",
+		photo: "./images/placeholder.jpg",
+		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		cv: "./docs/placeholder-cv.pdf"
+	},
+	{
+		name: "María Fernanda Ortiz",
+		photo: "./images/placeholder.jpg",
+		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		cv: "./docs/placeholder-cv.pdf"
+	},
+	{
+		name: "Laura Wainfeld",
+		photo: "./images/placeholder.jpg",
+		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		cv: "./docs/placeholder-cv.pdf"
+	},
+	{
+		name: "Diana Calfa",
+		photo: "./images/placeholder.jpg",
+		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		cv: "./docs/placeholder-cv.pdf"
+	},
+	{
+		name: "Carolina Jiménez",
+		photo: "./images/placeholder.jpg",
+		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		cv: "./docs/placeholder-cv.pdf"
+	}
+
+	];
+
+
+
+	profiles.forEach(profile => {
+
+		let card = document.createElement("div");
+
+		let photo = document.createElement("img");
+		photo.alt = "..."; //change
+		photo.src = profile.photo;
+		photo.className = "profilePic"
+
+		let name = document.createElement("h4");
+		name.textContent = profile.name;
+
+		let description = document.createElement("p");
+		description.textContent = profile.description;
+
+		let cv = document.createElement("button");
+		cv.textContent = "Más información";
+
+		cv.addEventListener("mousedown", function(e) {
+
+			e.preventDefault();
+		});
+
+		cv.addEventListener("click", function() {
+
+			window.open(profile.cv,'_blank');
+		});
+
+		container.appendChild(card);
+		card.appendChild(photo);
+		card.appendChild(name);
+		card.appendChild(description);
+		card.appendChild(cv);
+
+	});
+}
 
 
 
@@ -131,6 +238,7 @@ closeMenuOnSelection();
 openServiceDetails();
 loop();
 window.addEventListener("resize", loop);
-
+createProfiles();
+//add on load
 
 // add auto-close menu

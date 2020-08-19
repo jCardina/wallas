@@ -1,11 +1,11 @@
 @media only screen
 and (hover: none) {
 
-	.hero-text button:hover {
+	.hero-text button:hover, .bios button:hover {
 		background-color: rgb(37,151,204);
 	}
 
-	.hero-text button:active {
+	.hero-text button:active, .bios button:active {
 		background-color: rgba(37,151,204,0.7);
 	}
 
@@ -27,7 +27,7 @@ and (hover: none) {
 		color: rgba(70,142,175,0.86);
 	}
 
-	.services div, .hero-text button, button.menuBtn {
+	.services div, .hero-text button, button.menuBtn, .bios button {
 		cursor: default;
 	}
 
