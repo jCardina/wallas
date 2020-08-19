@@ -219,7 +219,7 @@ label {
 	padding: 0 40px 0 40px;
 }
 
-.services div, .bios div {
+.services div, .bios > div {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -242,7 +242,7 @@ label {
 
 }
 
-.services .is-visible:nth-child(1) {
+.services .is-visible:first-child {
 	animation: pop-in 0.4s ease-in;
 
 }
@@ -273,7 +273,12 @@ label {
 }
 
 .services .is-visible:nth-child(7) {
-	animation: pop-in 0.8s ease-in;
+	animation: pop-in 0.4s ease-in;
+
+}
+
+.services .is-visible:last-child {
+	animation: pop-in 0.6s ease-in;
 
 }
 
@@ -375,16 +380,17 @@ section {
 	padding-top: 40px;
 }
 
-.bios div {
+.bios > div {
 	background-color: #FFFFFF;
 	/*margin-bottom: 40px;*/
-	padding-bottom: 30px;
+	/*padding-bottom: 30px;*/
+	padding: 34px 20px 40px 20px;
 	/*flex-basis: 20%;*/
 	margin: 0px 10px 40px 10px;
 	opacity: 0;
 }
 
-.bios .is-visible {
+.bios > .is-visible {
 	opacity: 1;
 	animation: pop-in 1s forwards;
 }
@@ -402,10 +408,23 @@ section {
 }
 
 .bios p {
-	font-size: 12px;
+	font-size: 13px;
 	max-width: 220px;
-	margin-bottom: 16px;
-	/*text-align: left;*/
+	text-align: left;
+	font-weight: bold;
+	align-self: flex-start;
+}
+
+.bios .institution {
+	font-weight: normal;
+	font-size: 11px;
+	margin-bottom: 6px;
+	color: #333333;
+}
+
+.bios p:last-of-type {
+	margin-bottom: 30px;
+
 }
 
 .bios button {

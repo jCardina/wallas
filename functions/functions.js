@@ -20,39 +20,150 @@ let toggleHamMenu = document.getElementById("menuBtn").addEventListener("click",
 
 });
 
-let services = Array.from(document.querySelectorAll(".services div"));
 
-let openServiceDetails = function() {
-
-	for (i = 0; i < services.length; i++) {
-
-		services[i].addEventListener("mousedown", function(event) {
-			event.preventDefault();
-
-		});
-
-		services[i].addEventListener("keyup", function(event) {
-			if (event.keyCode == 13) {
-				this.click();
-			}
-		});
-		
-		services[i].addEventListener("click", function(event) {
+let openServiceDetails = function(service) {
 
 
-			if (!this.classList.contains("selected")) {
+	service.addEventListener("mousedown", function(event) {
+		event.preventDefault();
 
-				services.forEach(service => {
-					service.classList.remove("selected");
-				});
-			}
+	});
 
-			this.classList.toggle("selected");
+	service.addEventListener("keyup", function(event) {
+		if (event.keyCode == 13) {
+			service.click();
+		}
+	});
 
-		});
-	}
+	service.addEventListener("click", function(event) {
+
+
+		if (!service.classList.contains("selected")) {
+
+			let services = Array.from(document.querySelectorAll(".services div"));
+
+			services.forEach(serv => {
+				serv.classList.remove("selected");
+			});
+		}
+
+		service.classList.toggle("selected");
+
+	});
+	
 
 }
+
+
+let createServices = function() {
+
+	let container = document.getElementById("servicesCont");
+
+
+	let services = [
+	{
+		icon: "fas fa-language",
+		title: "Traducción de textos",
+		description: "Servicios de traducción de textos técnico-científicos y literarios",
+		pOne: "",
+		pTwo: ""
+	},
+	{
+		icon: "fas fa-balance-scale",
+		title: "Traducción pública",
+		description: "Servicios de traducción de textos legales",
+		pOne: "",
+		pTwo: ""
+	},
+	{
+		icon: "far fa-file-alt",
+		title: "Subtitulado",
+		description: "Servicios de transcripción, traducción y temporización",
+		pOne: "Producimos subtítulos electrónicos para todo tipo de contenido audiovisual de cine,  televisión y plataformas de internet. Contamos con un equipo de traductores, editores y correctores, especializados en traducción audiovisual y generación de subtítulos en múltiples extensiones.",
+		pTwo: "Nuestra oferta multilingüe incluye los siguientes idiomas: español, inglés, francés, portugués e italiano."
+	},
+	{
+		icon: "fas fa-closed-captioning",
+		title: "SDPPS",
+		description: "Servicios de subtitulado descriptivo para personas sordas o hipoacúsicas y subtitulado oculto",
+		pOne: "Ofrecemos un servicio de subtítulos ocultos de excelente calidad en español, inglés, portugués y francés en el tiempo que usted lo precise.",
+		pTwo: "Buscamos hacer su mensaje realmente accesible siguiendo los requerimientos necesarios para lograr un producto de excelencia."
+	},
+	{
+		icon: "fa fa-film",
+		title: "Guiones para doblaje",
+		description: "Servicios de traducción y adaptación para doblaje",
+		pOne: "",
+		pTwo: ""
+	},
+	{
+		icon: "fas fa-comments",
+		title: "Guiones de audiodescripción",
+		description: "Servicios de elaboración de guiones de audiodescripción para personas ciegas o con baja visión",
+		pOne: "",
+		pTwo: ""
+	},
+	{
+		icon: "fas fa-gamepad",
+		title: "Localización de videojuegos",
+		description: "Servicios de localización de videojuegos y plataformas en línea",
+		pOne: "",
+		pTwo: ""
+	},
+	{
+		icon: "fas fa-book-open",
+		title: "Revisión de textos",
+		description: "Servicios de revisión y corrección de textos",
+		pOne: "",
+		pTwo: ""
+	}
+	
+	];
+
+
+
+	services.forEach(service => {
+
+		let card = document.createElement("div");
+		card.setAttribute("tabindex", "0");
+
+		let icon = document.createElement("i");
+		icon.className = service.icon;
+
+		let title = document.createElement("h3");
+		title.textContent = service.title;
+
+		let description = document.createElement("p");
+		description.textContent = service.description;
+
+
+		let pOne = document.createElement("p");
+		pOne.textContent = service.pOne;
+		pOne.className = "moreInfo";
+
+		let pTwo = document.createElement("p");
+		pTwo.textContent = service.pTwo;
+		pTwo.className = "moreInfo";
+		
+
+		openServiceDetails(card);
+
+		container.appendChild(card);
+		card.appendChild(icon);
+		card.appendChild(title);
+		card.appendChild(description);
+		card.appendChild(pOne);
+		card.appendChild(pTwo);
+
+		//check if pone and ptwo have content
+
+	});
+
+
+
+}
+
+
 
 
 let closeMenuOnSelection = function() {
@@ -79,6 +190,8 @@ let closeMenuOnSelection = function() {
 // var elementsToShow = document.querySelectorAll('.services div'); 
 
 function loop() {
+
+	let services = Array.from(document.querySelectorAll(".services div"));
 
 	services.forEach(element => {
 		if (isElementInViewport(element)) {
@@ -110,13 +223,7 @@ function loop() {
 // Call the loop for the first time
 // loop();
 
-window.addEventListener('scroll', ()=> {
 
-	setTimeout(function() {
-		console.log("loop")
-		loop();
-	}, 50);
-});
 
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
@@ -150,43 +257,122 @@ let createProfiles = function() {
 	{
 		name: "Natalia Tamini",
 		photo: "./images/placeholder.jpg",
-		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		description: [
+		{
+			title:'##Traductora Técnica, Científica y Literaria en idioma inglés',
+			inst:'##ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		},
+		{
+			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		}
+		],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Valentina Oliva",
 		photo: "./images/placeholder.jpg",
-		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		description: [
+		{
+			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+			inst:'Universidad del Museo Social Argentino'
+		},
+		{
+			title:'Profesora de italiano',
+			inst:''
+		},
+		{
+			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		}
+		],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Camila Dulce",
 		photo: "./images/placeholder.jpg",
-		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		description: [
+		{
+			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+			inst:'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		},
+		{
+			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		}
+		],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "María Fernanda Ortiz",
 		photo: "./images/placeholder.jpg",
-		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		description: [
+		{
+			title:'##Traductora Técnica, Científica y Literaria en idioma inglés',
+			inst:'##ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		},
+		{
+			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		}
+		],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Laura Wainfeld",
 		photo: "./images/placeholder.jpg",
-		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		description: [
+		{
+			title:'Traductora Técnica, Científica y Literaria en idioma francés',
+			inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
+		},
+		{
+			title:'Profesora de francés',
+			inst:'IS del Profesorado “Dr. Joaquín V. González”'
+		},
+		{
+			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		}
+		],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Diana Calfa",
 		photo: "./images/placeholder.jpg",
-		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		description: [
+		{
+			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+			inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
+		},
+		{
+			title:'Traductora Pública en idioma inglés',
+			inst:'Universidad de Buenos Aires'
+		},
+		{
+			title:'Traductora Pública en idioma portugués',
+			inst:'Universidad de Buenos Aires'
+		},
+		{
+			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		}
+		],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Carolina Jiménez",
 		photo: "./images/placeholder.jpg",
-		description: 'Traductora literaria y técnico-científica egresada del IES en Lenguas Vivas "Juan Ramón Fernández". Especialización en textos audiovisuales y accesibilidad.',
+		description: [
+		{
+			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+			inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
+		},
+		{
+			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		}
+		],
 		cv: "./docs/placeholder-cv.pdf"
 	}
 
@@ -202,13 +388,14 @@ let createProfiles = function() {
 		photo.alt = profile.name;
 		photo.title = profile.name;
 		photo.src = profile.photo;
-		photo.className = "profilePic"
+		photo.className = "profilePic";
 
 		let name = document.createElement("h4");
 		name.textContent = profile.name;
 
-		let description = document.createElement("p");
-		description.textContent = profile.description;
+		let textBox = document.createElement("div");
+		textBox.style.minHeight = "230px";
+
 
 		let cv = document.createElement("button");
 		cv.textContent = "Más información";
@@ -226,7 +413,22 @@ let createProfiles = function() {
 		container.appendChild(card);
 		card.appendChild(photo);
 		card.appendChild(name);
-		card.appendChild(description);
+		card.appendChild(textBox);
+
+		profile.description.forEach(elm => {
+
+			let title = document.createElement("p");
+			title.textContent = "- " + elm.title;
+
+			let inst = document.createElement("p");
+			inst.textContent = elm.inst;
+			inst.className = "institution";
+
+
+			textBox.appendChild(title);
+			textBox.appendChild(inst);
+		});
+
 		card.appendChild(cv);
 
 	});
@@ -234,12 +436,20 @@ let createProfiles = function() {
 
 
 
-
+createServices();
+createProfiles();
 closeMenuOnSelection();
-openServiceDetails();
 loop();
 window.addEventListener("resize", loop);
-createProfiles();
+
+setTimeout(function() {
+
+	window.addEventListener('scroll', ()=> {
+		loop();
+		console.log("loop");
+	});
+}, 100);
+
 //add on load
 
-// add auto-close menu
+// add auto-close menu /services and on display none?
