@@ -202,7 +202,7 @@ function loop() {
 	});
 
 
-	let profiles = Array.from(document.querySelectorAll("#biosCont div"));
+	let profiles = Array.from(document.querySelectorAll("#biosCont > div"));
 
 	profiles.forEach(element => {
 		if (isElementInViewport(element)) {
@@ -394,7 +394,6 @@ let createProfiles = function() {
 		name.textContent = profile.name;
 
 		let textBox = document.createElement("div");
-		textBox.style.minHeight = "230px";
 
 
 		let cv = document.createElement("button");

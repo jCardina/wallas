@@ -418,6 +418,7 @@ section {
 .bios > div div {
 	padding-left: 10px;
 	padding-right: 10px;
+	min-height: 230px;
 }
 
 .bios .institution {
