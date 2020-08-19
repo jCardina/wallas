@@ -410,9 +410,14 @@ section {
 .bios p {
 	font-size: 13px;
 	max-width: 220px;
-	text-align: left;
+	text-align: justify;
 	font-weight: bold;
 	align-self: flex-start;
+}
+
+.bios > div div {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .bios .institution {
@@ -420,6 +425,7 @@ section {
 	font-size: 11px;
 	margin-bottom: 6px;
 	color: #333333;
+	text-align: left;
 }
 
 .bios p:last-of-type {

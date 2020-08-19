@@ -418,7 +418,7 @@ let createProfiles = function() {
 		profile.description.forEach(elm => {
 
 			let title = document.createElement("p");
-			title.textContent = "- " + elm.title;
+			title.textContent = elm.title;
 
 			let inst = document.createElement("p");
 			inst.textContent = elm.inst;
