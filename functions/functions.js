@@ -199,7 +199,8 @@ let createProfiles = function() {
 		let card = document.createElement("div");
 
 		let photo = document.createElement("img");
-		photo.alt = "..."; //change
+		photo.alt = profile.name;
+		photo.title = profile.name;
 		photo.src = profile.photo;
 		photo.className = "profilePic"
 
