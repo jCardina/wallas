@@ -388,6 +388,7 @@ section {
 	/*flex-basis: 20%;*/
 	margin: 0px 10px 40px 10px;
 	opacity: 0;
+	width: 320px;
 }
 
 .bios > .is-visible {
@@ -409,16 +410,16 @@ section {
 
 .bios p {
 	font-size: 13px;
-	max-width: 220px;
+	max-width: 250px;
 	text-align: justify;
 	font-weight: bold;
 	align-self: flex-start;
 }
 
 .bios > div div {
-	padding-left: 10px;
-	padding-right: 10px;
-	min-height: 230px;
+	/*padding-left: 10px;*/
+	/*padding-right: 10px;*/
+	min-height: 180px;
 }
 
 .bios .institution {
@@ -430,7 +431,7 @@ section {
 }
 
 .bios p:last-of-type {
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 
 }
 
