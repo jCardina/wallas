@@ -100,7 +100,7 @@ let createServices = function() {
 		icon: "fas fa-comments",
 		title: "Guiones de audiodescripción",
 		description: "Servicios de elaboración de guiones de audiodescripción para personas ciegas o con baja visión",
-		pOne: "",
+		pOne: " Adaptamos contenidos audiovisuales  para personas ciegas o con baja visión. A través de esta herramienta, es posible activar una pista de audio alternativa que facilita la comprensión de una escena con la finalidad de proporcionar información sobre la situación espacial, los gestos, actitudes, paisajes y vestuario.",
 		pTwo: ""
 	},
 	{
@@ -259,8 +259,8 @@ let createProfiles = function() {
 		photo: "./images/placeholder.jpg",
 		description: [
 		{
-			title:'##Traductora Técnica, Científica y Literaria en idioma inglés',
-			inst:'##ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+			inst:'Universidad del Salvador'
 		},
 		{
 			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',

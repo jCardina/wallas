@@ -142,7 +142,7 @@ label {
 }
 
 .hero-image:before {
-	animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+	animation: fade-slide-down 2s cubic-bezier(0, 0.5, 0, 1) forwards;
 	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
 	url("../images/1noom-peerapong-2uwFEAGUm6E-unsplash.jpg") no-repeat bottom;
 	background-size: cover;
@@ -179,14 +179,14 @@ label {
 }
 
 .hero-text h1 {
-	animation: pop-in 0.8s ease-in forwards;
+	animation: pop-in 0.6s ease-in forwards;
 	opacity: 0;
 }
 
 .hero-text p {
 	padding-top: 30px;
 	padding-bottom: 50px;
-	animation: pop-in 0.8s ease-in 0.5s forwards;
+	animation: pop-in 0.6s ease-in 0.4s forwards;
 	opacity: 0;
 }
 
@@ -204,7 +204,7 @@ label {
 	letter-spacing: 2px;
 	font-size: 16px;
 	opacity: 0;
-	animation: pop-in 0.8s ease-in 0.8s forwards;
+	animation: pop-in 0.6s ease-in 0.8s forwards;
 }
 
 .hero-text button:hover {
@@ -320,6 +320,7 @@ label {
 	font-size: 14px;
 	color: #000000;
 	display: none;
+	text-indent: 16px;
 }
 
 .services .selected .moreInfo {
