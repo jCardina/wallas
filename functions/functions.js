@@ -4,14 +4,19 @@ let goToContactDetails = document.getElementById("contactBtn").addEventListener(
 	window.location.href = "#contacto";
 });
 
-document.getElementById("contactBtn").addEventListener("mousedown", function(event) {
-	event.preventDefault();
-});
 
-document.getElementById("menuBtn").addEventListener("mousedown", function(event) {
-	event.preventDefault();
-});
+let preventFocusOnClick = function() {
 
+	let buttons = Array.from(document.getElementsByTagName("button"));
+
+	buttons.forEach( btn => {
+
+		btn.addEventListener("mousedown", function(e) {
+			e.preventDefault();
+		});
+
+	})
+}
 
 let toggleHamMenu = document.getElementById("menuBtn").addEventListener("click", function(event) {
 
@@ -399,11 +404,6 @@ let createProfiles = function() {
 		let cv = document.createElement("button");
 		cv.textContent = "Más información";
 
-		cv.addEventListener("mousedown", function(e) {
-
-			e.preventDefault();
-		});
-
 		cv.addEventListener("click", function() {
 
 			window.open(profile.cv,'_blank');
@@ -481,9 +481,6 @@ let submitForm = async function() {
 	} else {
 		return true;
 	}
-
-
-    
 	
 }
 
@@ -505,23 +502,32 @@ document.getElementById("contactForm").addEventListener("submit", async function
 		return false;
 	}
 
+	this.style.display = "none";
+	document.getElementById("success").style.display = "flex";
+
 	let inputs = Array.from(document.getElementsByClassName("inp"));
 
 	inputs.forEach( elm => {
 		elm.value = "";
 	});
 
-	alert("Gracias por comunicarse con nosotros."); //change
 	btn.disabled = false;
 
-
 	return false;
+});
+
+document.getElementById("newMsg").addEventListener("click", function(event) {
+
+	document.getElementById("success").style.display = "none";
+	document.getElementById("contactForm").style.display = "flex";
+	
 });
 
 
 createServices();
 createProfiles();
 closeMenuOnSelection();
+preventFocusOnClick();
 loop();
 window.addEventListener("resize", loop);
 

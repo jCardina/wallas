@@ -431,7 +431,7 @@ section {
 	text-align: left;
 }
 
-.bios button, form button {
+.bios button, form button, #success button {
 	border: none;
 	display: inline-block;
 	padding: 10px 16px;
@@ -446,10 +446,9 @@ section {
 	font-size: 11px;
 }
 
-.bios button:hover, form button:hover, form button:disabled {
+.bios button:hover, form button:hover, form button:disabled, #success button:hover {
 	background-color: rgba(37,151,204,0.7);
 }
-
 .contact_details {
 	display: flex;
 	flex-flow: row nowrap;
@@ -466,11 +465,24 @@ section {
 	color: #147990;
 }
 
-form {
+form, #success {
 	display: flex;
 	flex-flow: column nowrap;
 	padding: 0 20% 0 20%;
 	justify-content: space-evenly;
+}
+
+#success {
+	display: none;
+	align-items: center;
+	font-size: 20px;
+	height: 200px;
+
+}
+
+#success button {
+	font-size: 16px;
+	padding: 12px 20px;
 }
 
 input {

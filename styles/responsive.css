@@ -1,11 +1,11 @@
 @media only screen
 and (hover: none) {
 
-	.hero-text button:hover, .bios button:hover, form button:hover:enabled {
+	.hero-text button:hover, .bios button:hover, form button:hover:enabled, #success button:hover {
 		background-color: rgb(37,151,204);
 	}
 
-	.hero-text button:active, .bios button:active, form button:active:enabled {
+	.hero-text button:active, .bios button:active, form button:active:enabled, #success button:active {
 		background-color: rgba(37,151,204,0.7);
 	}
 
