@@ -435,7 +435,7 @@ let createProfiles = function() {
 
 let sendEmail = function(data) {
 
-	const sent = fetch("http://127.0.0.1:3000/forms", {
+	const sent = fetch("https://wallas-tav-server.herokuapp.com/forms", {
 		method: 'POST',
         body: JSON.stringify(data),
         headers: {
