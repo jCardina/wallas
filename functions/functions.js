@@ -433,6 +433,59 @@ let createProfiles = function() {
 	});
 }
 
+let sendEmail = function(data) {
+
+	const sent = fetch("http://127.0.0.1:3000/forms", {
+		method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+			'Content-Type': 'application/json'
+		},
+
+	})
+	.then((response) => {
+		return response.json();
+    })
+    .then((data) => {
+        console.log(data);
+        return data;
+	})
+	.catch((error) => {
+		return error;
+	})
+
+	return sent;
+
+}
+
+let submitForm = async function() {
+
+	let name = document.getElementById("inputName").value;	
+	let lastname = document.getElementById("inputLastname").value;
+	let email = document.getElementById("inputEmail").value;
+	let message = document.getElementById("inputMsg").value;
+    
+
+	let data = {
+        name: name,
+		lastname: lastname,
+		email: email,
+		msg: message
+	};
+	
+	let sent = await sendEmail(data);
+	console.log(sent.status); //conseguir status code
+
+    
+	
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+	
+	submitForm();
+	e.preventDefault();
+	return false;
+});
 
 
 createServices();
