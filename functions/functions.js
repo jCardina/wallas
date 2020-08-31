@@ -131,6 +131,7 @@ let createServices = function() {
 
 		let card = document.createElement("div");
 		card.setAttribute("tabindex", "0");
+		card.setAttribute("aria-label", service.title);
 
 		let icon = document.createElement("i");
 		icon.className = service.icon;

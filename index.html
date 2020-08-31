@@ -32,7 +32,7 @@
 				<img src="./images/logo.png" alt="Wallas - Traducción & Accesibilidad" title="Wallas - Traducción & Accesibilidad" />
 			</div>
 
-			<button class="menuBtn" id="menuBtn" title="Menú">
+			<button class="menuBtn" id="menuBtn" title="Menú" name="Menú" aria-label="Menú">
 				<span class="one"></span>
 				<span class="two"></span>
 				<span class="three"></span>
@@ -86,11 +86,15 @@
 					<h3><i class="fa fa-envelope" aria-hidden="true"></i> wallastav@gmail.com</h3>
 				</div>
 				<div>
-					<form id="contactForm">
-						<input class="inp" id="inputName" type="text" placeholder="Nombre" minlength="2" maxlength="40" pattern="^(?=.*[A-Za-z])[a-zA-ZñÑáéíóúÁÉÍÓÚü][a-zA-ZñÑáéíóúÁÉÍÓÚü' ]{0,38}[a-zA-ZñÑáéíóúÁÉÍÓÚü]$" title="El nombre debe tener entre 2 y 40 caracteres. No se permiten números ni caracteres especiales excepto vocales acentuadas, 'ñ' y apóstrofe." required>
-						<input class="inp" id="inputLastname" type="text" placeholder="Apellido" minlength="2" maxlength="40" pattern="^(?=.*[A-Za-z])[a-zA-ZñÑáéíóúÁÉÍÓÚü][a-zA-ZñÑáéíóúÁÉÍÓÚü' ]{0,38}[a-zA-ZñÑáéíóúÁÉÍÓÚü]$" title="El apellido debe tener entre 2 y 40 caracteres. No se permiten números ni caracteres especiales excepto vocales acentuadas, 'ñ' y apóstrofe." required>
-						<input class="inp" id="inputEmail" type="email" placeholder="Correo electrónico" maxlength="50" title="Dirección de correo electrónico válida" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
-						<textarea class="inp" id="inputMsg" name="message" minlength="10" maxlength="4000" placeholder="Envíenos un mensaje..." title="Mensaje" required></textarea>
+					<form id="contactForm" name="formulario de contacto">
+						
+						<input class="inp" id="inputName" name="Nombre" aria-label="Nombre" type="text" placeholder="Nombre" minlength="2" maxlength="40" pattern="^(?=.*[A-Za-z])[a-zA-ZñÑáéíóúÁÉÍÓÚü][a-zA-ZñÑáéíóúÁÉÍÓÚü' ]{0,38}[a-zA-ZñÑáéíóúÁÉÍÓÚü]$" title="El nombre debe tener entre 2 y 40 caracteres. No se permiten números ni caracteres especiales excepto vocales acentuadas, 'ñ' y apóstrofe." required>
+						
+						<input class="inp" id="inputLastname" name="Apellido" aria-label="Apellido" type="text" placeholder="Apellido" minlength="2" maxlength="40" pattern="^(?=.*[A-Za-z])[a-zA-ZñÑáéíóúÁÉÍÓÚü][a-zA-ZñÑáéíóúÁÉÍÓÚü' ]{0,38}[a-zA-ZñÑáéíóúÁÉÍÓÚü]$" title="El apellido debe tener entre 2 y 40 caracteres. No se permiten números ni caracteres especiales excepto vocales acentuadas, 'ñ' y apóstrofe." required>
+						
+						<input class="inp" id="inputEmail" name="Correo electrónico" aria-label="Correo electrónico" type="email" placeholder="Correo electrónico" maxlength="50" title="Dirección de correo electrónico válida" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
+						
+						<textarea class="inp" id="inputMsg" name="Mensaje" aria-label="Mensaje" minlength="10" maxlength="4000" placeholder="Envíenos un mensaje..." title="Mensaje" required></textarea>
 						<button id="sendForm" type="submit">Enviar</button>
 					</form>
 
