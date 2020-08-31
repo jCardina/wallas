@@ -87,10 +87,10 @@
 				</div>
 				<div>
 					<form id="contactForm">
-						<input id="inputName" type="text" placeholder="Nombre" minlength="2" maxlength="40" required>
-						<input id="inputLastname" type="text" placeholder="Apellido" minlength="2" maxlength="40" required>
-						<input id="inputEmail" type="email" placeholder="Correo electrónico" required>
-						<textarea id="inputMsg" name="message" minlength="10" maxlength="4000" placeholder="Envianos un mensaje..." required></textarea>
+						<input class="inp" id="inputName" type="text" placeholder="Nombre" minlength="2" maxlength="40" pattern="^(?=.*[A-Za-z])[a-zA-ZñÑáéíóúÁÉÍÓÚü][a-zA-ZñÑáéíóúÁÉÍÓÚü' ]{0,38}[a-zA-ZñÑáéíóúÁÉÍÓÚü]$" title="El nombre debe tener entre 2 y 40 caracteres. No se permiten números ni caracteres especiales excepto vocales acentuadas, 'ñ' y apóstrofe." required>
+						<input class="inp" id="inputLastname" type="text" placeholder="Apellido" minlength="2" maxlength="40" pattern="^(?=.*[A-Za-z])[a-zA-ZñÑáéíóúÁÉÍÓÚü][a-zA-ZñÑáéíóúÁÉÍÓÚü' ]{0,38}[a-zA-ZñÑáéíóúÁÉÍÓÚü]$" title="El apellido debe tener entre 2 y 40 caracteres. No se permiten números ni caracteres especiales excepto vocales acentuadas, 'ñ' y apóstrofe." required>
+						<input class="inp" id="inputEmail" type="email" placeholder="Correo electrónico" maxlength="50" title="Correo electrónico" required>
+						<textarea class="inp" id="inputMsg" name="message" minlength="10" maxlength="4000" placeholder="Envíenos un mensaje..." title="Mensaje" required></textarea>
 						<button id="sendForm" type="submit">Enviar</button>
 					</form>
 				</div>

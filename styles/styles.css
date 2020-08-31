@@ -431,12 +431,7 @@ section {
 	text-align: left;
 }
 
-.bios p:last-of-type {
-	/*margin-bottom: 30px;*/
-
-}
-
-.bios button {
+.bios button, form button {
 	border: none;
 	display: inline-block;
 	padding: 10px 16px;
@@ -451,7 +446,7 @@ section {
 	font-size: 11px;
 }
 
-.bios button:hover {
+.bios button:hover, form button:hover, form button:disabled {
 	background-color: rgba(37,151,204,0.7);
 }
 
@@ -469,6 +464,42 @@ section {
 
 .contact_details i {
 	color: #147990;
+}
+
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 0 20% 0 20%;
+	justify-content: space-evenly;
+}
+
+input {
+	height: 30px;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 10px;
+	text-indent: 8px;
+	background-color: rgba(230, 231, 245,0.5);;
+	border-radius: 5px;
+	border: 0;
+}
+
+textarea {
+	resize: vertical;
+	min-width: 192px;
+	min-height: 130px;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 30px;
+	text-indent: 8px;
+	background-color: rgba(230, 231, 245,0.5);;
+	border-radius: 5px;
+	border: 0;
+	padding-top: 6px;
+}
+
+form button {
+	align-self: flex-end;
+	margin-top: 20px;
+	font-size: 14px;
 }
 
 .footer {

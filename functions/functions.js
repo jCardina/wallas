@@ -474,16 +474,47 @@ let submitForm = async function() {
 	};
 	
 	let sent = await sendEmail(data);
-	console.log(sent.status); //conseguir status code
+	console.log(sent.status);
+
+	if (sent.status != 200) {
+		return false;
+	} else {
+		return true;
+	}
+
 
     
 	
 }
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-	
-	submitForm();
+
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+
+	let btn = document.getElementById("sendForm");
+	btn.disabled = true;
+
 	e.preventDefault();
+	let delivered = await submitForm();
+	
+
+	if (!delivered) {
+
+		alert("No se pudo procesar la solicitud. Por favor intente más tarde."); //change
+		btn.disabled = false;
+				
+		return false;
+	}
+
+	let inputs = Array.from(document.getElementsByClassName("inp"));
+
+	inputs.forEach( elm => {
+		elm.value = "";
+	});
+
+	alert("Gracias por comunicarse con nosotros."); //change
+	btn.disabled = false;
+
+
 	return false;
 });
 
