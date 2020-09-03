@@ -62,106 +62,129 @@ let openServiceDetails = function(service) {
 
 let createServices = function() {
 
-	let container = document.getElementById("servicesCont");
 
 
-	let services = [
+	let services = [ 
 	{
-		icon: "fas fa-language",
-		title: "Traducción de textos",
-		description: "Servicios de traducción de textos técnico-científicos y literarios",
-		pOne: "",
-		pTwo: ""
+		category: "tav",
+		items: [
+		{
+			icon: "far fa-file-alt",
+			title: "Subtitulado",
+			description: "Servicios de transcripción, traducción y temporización",
+			text: [
+			{paragraph: "Producimos subtítulos electrónicos para todo tipo de contenido audiovisual de cine,  televisión y plataformas de internet. Contamos con un equipo de traductores, editores y correctores, especializados en traducción audiovisual y generación de subtítulos en múltiples extensiones."},
+			{paragraph: "Nuestra oferta multilingüe incluye los siguientes idiomas: español, inglés, francés, portugués e italiano."}
+			]
+		},
+		{
+			icon: "fa fa-film",
+			title: "Guiones para doblaje",
+			description: "Servicios de traducción y adaptación para doblaje",
+			text: [{paragraph: ""}]
+		},
+		{
+			icon: "fas fa-gamepad",
+			title: "Localización de videojuegos",
+			description: "Servicios de localización de videojuegos y plataformas en línea",
+			text: [{paragraph: ""}]
+		},
+		{
+			icon: "far fa-file-code",
+			title: "Localización de sitios web",
+			description: "Servicios de localización de sitios y páginas web",
+			text: [{paragraph: ""}]
+		}
+		]
 	},
 	{
-		icon: "fas fa-balance-scale",
-		title: "Traducción pública",
-		description: "Servicios de traducción de textos legales",
-		pOne: "",
-		pTwo: ""
+		category: "access",
+		items: [
+		{
+			icon: "fas fa-closed-captioning",
+			title: "SDPPS",
+			description: "Servicios de subtitulado descriptivo para personas sordas o hipoacúsicas y subtitulado oculto",
+			text: [
+			{paragraph: "Ofrecemos un servicio de subtítulos ocultos de excelente calidad en español, inglés, portugués y francés en el tiempo que usted lo precise."},
+			{paragraph: "Buscamos hacer su mensaje realmente accesible siguiendo los requerimientos necesarios para lograr un producto de excelencia."}
+			]
+		},
+		{
+			icon: "fas fa-comments",
+			title: "Guiones de audiodescripción",
+			description: "Servicios de elaboración de guiones de audiodescripción para personas ciegas o con baja visión",
+			text: [{paragraph: "Adaptamos contenidos audiovisuales  para personas ciegas o con baja visión. A través de esta herramienta, es posible activar una pista de audio alternativa que facilita la comprensión de una escena con la finalidad de proporcionar información sobre la situación espacial, los gestos, actitudes, paisajes y vestuario."}]
+		}	
+		]
 	},
 	{
-		icon: "far fa-file-alt",
-		title: "Subtitulado",
-		description: "Servicios de transcripción, traducción y temporización",
-		pOne: "Producimos subtítulos electrónicos para todo tipo de contenido audiovisual de cine,  televisión y plataformas de internet. Contamos con un equipo de traductores, editores y correctores, especializados en traducción audiovisual y generación de subtítulos en múltiples extensiones.",
-		pTwo: "Nuestra oferta multilingüe incluye los siguientes idiomas: español, inglés, francés, portugués e italiano."
-	},
-	{
-		icon: "fas fa-closed-captioning",
-		title: "SDPPS",
-		description: "Servicios de subtitulado descriptivo para personas sordas o hipoacúsicas y subtitulado oculto",
-		pOne: "Ofrecemos un servicio de subtítulos ocultos de excelente calidad en español, inglés, portugués y francés en el tiempo que usted lo precise.",
-		pTwo: "Buscamos hacer su mensaje realmente accesible siguiendo los requerimientos necesarios para lograr un producto de excelencia."
-	},
-	{
-		icon: "fa fa-film",
-		title: "Guiones para doblaje",
-		description: "Servicios de traducción y adaptación para doblaje",
-		pOne: "",
-		pTwo: ""
-	},
-	{
-		icon: "fas fa-comments",
-		title: "Guiones de audiodescripción",
-		description: "Servicios de elaboración de guiones de audiodescripción para personas ciegas o con baja visión",
-		pOne: " Adaptamos contenidos audiovisuales  para personas ciegas o con baja visión. A través de esta herramienta, es posible activar una pista de audio alternativa que facilita la comprensión de una escena con la finalidad de proporcionar información sobre la situación espacial, los gestos, actitudes, paisajes y vestuario.",
-		pTwo: ""
-	},
-	{
-		icon: "fas fa-gamepad",
-		title: "Localización de videojuegos",
-		description: "Servicios de localización de videojuegos y plataformas en línea",
-		pOne: "",
-		pTwo: ""
-	},
-	{
-		icon: "fas fa-book-open",
-		title: "Revisión de textos",
-		description: "Servicios de revisión y corrección de textos",
-		pOne: "",
-		pTwo: ""
+		category: "texts",
+		items: [
+		{
+			icon: "fas fa-language",
+			title: "Traducción de textos",
+			description: "Servicios de traducción de textos técnico-científicos y literarios",
+			text: [{paragraph: ""}]
+		},
+		{
+			icon: "fas fa-balance-scale",
+			title: "Traducción pública",
+			description: "Servicios de traducción de textos legales",
+			text: [{paragraph: ""}]
+		},
+		{
+			icon: "fas fa-book-open",
+			title: "Revisión de textos",
+			description: "Servicios de revisión y corrección de textos",
+			text: [{paragraph: ""}]
+		}
+		]
 	}
-	
 	];
 
-
+	
 
 	services.forEach(service => {
 
-		let card = document.createElement("div");
-		card.setAttribute("tabindex", "0");
-		card.setAttribute("aria-label", service.title);
+		let container = document.getElementById(service.category);
 
-		let icon = document.createElement("i");
-		icon.className = service.icon;
-
-		let title = document.createElement("h3");
-		title.textContent = service.title;
-
-		let description = document.createElement("p");
-		description.textContent = service.description;
+		service.items.forEach(item => {
 
 
-		let pOne = document.createElement("p");
-		pOne.textContent = service.pOne;
-		pOne.className = "moreInfo";
+			let card = document.createElement("div");
+			card.setAttribute("tabindex", "0");
+			card.setAttribute("aria-label", item.title);
 
-		let pTwo = document.createElement("p");
-		pTwo.textContent = service.pTwo;
-		pTwo.className = "moreInfo";
+			let icon = document.createElement("i");
+			icon.className = item.icon;
+
+			let title = document.createElement("h3");
+			title.textContent = item.title;
+
+			let description = document.createElement("p");
+			description.textContent = item.description;
+
+
+			openServiceDetails(card);
+
+			container.appendChild(card);
+			card.appendChild(icon);
+			card.appendChild(title);
+			card.appendChild(description);
+
+
+			item.text.forEach(elm => {
+
+				let paragraph = document.createElement("p");
+				paragraph.className = "moreInfo";
+				paragraph.textContent = elm.paragraph;
+
+				card.appendChild(paragraph);
+
+			});
+
+		});
 		
-
-		openServiceDetails(card);
-
-		container.appendChild(card);
-		card.appendChild(icon);
-		card.appendChild(title);
-		card.appendChild(description);
-		card.appendChild(pOne);
-		card.appendChild(pTwo);
-
-		//check if pone and ptwo have content
 
 	});
 
@@ -438,18 +461,18 @@ let sendEmail = function(data) {
 
 	const sent = fetch("https://wallas-tav-server.herokuapp.com/forms", {
 		method: 'POST',
-        body: JSON.stringify(data),
-        headers: {
+		body: JSON.stringify(data),
+		headers: {
 			'Content-Type': 'application/json'
 		},
 
 	})
 	.then((response) => {
 		return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-        return data;
+	})
+	.then((data) => {
+		console.log(data);
+		return data;
 	})
 	.catch((error) => {
 		return error;
@@ -465,10 +488,10 @@ let submitForm = async function() {
 	let lastname = document.getElementById("inputLastname").value;
 	let email = document.getElementById("inputEmail").value;
 	let message = document.getElementById("inputMsg").value;
-    
+
 
 	let data = {
-        name: name,
+		name: name,
 		lastname: lastname,
 		email: email,
 		msg: message
@@ -499,7 +522,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
 		alert("No se pudo procesar la solicitud. Por favor intente más tarde."); //change
 		btn.disabled = false;
-				
+
 		return false;
 	}
 

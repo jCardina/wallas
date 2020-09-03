@@ -236,6 +236,11 @@ and (max-width: 500px) {
 		font-size: 34px;
 	}
 
+	#servicesCont > h3 {
+		font-size: 26px;
+		width: 90%;
+	}
+
 	.about_us {
 		padding: 0 40px 0 40px;
 	}
@@ -264,6 +269,7 @@ and (max-width: 500px) {
 	}
 
 	.social_media {
-		width: 85px;
+		/*width: 85px;*/
+		width: 66px;
 	}
 }
