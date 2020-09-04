@@ -216,7 +216,7 @@ nav label {
 	flex-flow: row wrap;
 	width: 100%;
 	justify-content: space-around;
-	padding: 0 40px 0 40px;
+	padding: 0 30px 0 30px;
 }
 
 #servicesCont > h3 {
@@ -250,6 +250,7 @@ nav label {
 	will-change: opacity;
 	cursor: pointer;
 	height: 280px;
+	width: 320px;
 	transition: all 0.5s;
 
 }
@@ -273,7 +274,7 @@ nav label {
 	animation: pop-in 0.8s ease-in;
 
 }
-
+/*
 .services .is-visible:nth-child(4) {
 	animation: pop-in 0.4s ease-in;
 
@@ -292,7 +293,7 @@ nav label {
 .services .is-visible:nth-child(7) {
 	animation: pop-in 0.4s ease-in;
 
-}
+}*/
 
 .services .is-visible:last-child {
 	animation: pop-in 0.6s ease-in;
@@ -331,7 +332,7 @@ nav label {
 }
 
 .services .moreInfo {
-	padding: 0px 10px 10px 10px;
+	padding: 0px 14px 10px 14px;
 	margin-bottom: 0px;
 	text-align: justify;
 	font-size: 14px;
@@ -360,9 +361,9 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.services p, .bios p {
+.services p {
 	display: block;
-	max-width: 300px;
+	max-width: 280px;
 	text-align: center;
 }
 
@@ -406,7 +407,7 @@ section {
 	/*flex-basis: 20%;*/
 	margin: 0px 10px 40px 10px;
 	opacity: 0;
-	width: 320px;
+	width: 300px;
 }
 
 .bios > .is-visible {
@@ -428,7 +429,9 @@ section {
 
 .bios p {
 	font-size: 13px;
-	max-width: 250px;
+	max-width: 246px;
+	display: block;
+	text-align: center;
 	text-align: justify;
 	font-weight: bold;
 	align-self: flex-start;

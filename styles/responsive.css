@@ -74,7 +74,7 @@ and (max-width: 999px) {
 and (max-width: 890px) {
 
 	.contact_details {
-		padding: 0 40px 80px 40px; 
+		padding: 0 40px 60px 40px; 
 	}
 
 	.contact_details h3 {
@@ -188,6 +188,10 @@ and (hover: none) {
 		background-color: #2597cc;
 	}
 
+	form, #success {
+		padding: 0 12%;
+	}
+
 }
 
 
@@ -195,17 +199,17 @@ and (hover: none) {
 and (max-width: 660px) {
 
 
-	.services {
+	/*.services {
 		flex-flow: column nowrap;
-	}
+	}*/
 
-	.services div:first-child {
-		padding-bottom: 60px; 
+	/*.services div:first-child {
+		margin-bottom: 60px; 
 	}
 
 	.services div:last-child {
-		padding-top: 60px; 
-	}
+		margin-top: 60px; 
+	}*/
 
 	.services h3 {
 		margin-bottom: 30px;
@@ -218,6 +222,11 @@ and (max-width: 660px) {
 
 	.hero-text button {
 		padding: 14px 44px;
+	}
+
+	.bios > div {
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 }
@@ -246,11 +255,15 @@ and (max-width: 500px) {
 	}
 
 	.contact_details {
-		padding: 0 20px 80px 20px;
+		padding: 0 20px 40px 20px;
 	}
 
 	.contact_details h3 {
 		font-size: 18px;
+	}
+
+	form, #success {
+		padding: 0 9%;
 	}
 
 	.footer {
