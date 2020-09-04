@@ -237,7 +237,8 @@ nav label {
 	/*border-radius: 5px;*/
 	height: 60px;
 	line-height: 60px;
-	border-bottom: 4px solid rgb(37,151,204);;
+	/*border-bottom: 4px solid rgb(37,151,204);*/
+	border-bottom: 4px solid rgb(96 195 216);
 }
 
 .services div, .bios > div {
