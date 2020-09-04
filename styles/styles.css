@@ -216,9 +216,13 @@ nav label {
 	flex-flow: row wrap;
 	width: 100%;
 	justify-content: space-around;
-	padding: 0 30px 0 30px;
+	padding: 0 40px;
 }
 
+/*.bios {
+	padding: 0 40px;	
+}
+*/
 #servicesCont > h3 {
 	font-size: 30px;
 	margin: auto; 
