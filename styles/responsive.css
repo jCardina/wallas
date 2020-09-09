@@ -224,10 +224,7 @@ and (max-width: 660px) {
 		padding: 14px 44px;
 	}
 
-	.bios > div {
-		margin-left: 0;
-		margin-right: 0;
-	}
+	
 
 }
 
@@ -252,6 +249,11 @@ and (max-width: 500px) {
 
 	.about_us {
 		padding: 0 40px 0 40px;
+	}
+
+	.bios > div {
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.contact_details {
