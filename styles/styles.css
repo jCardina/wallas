@@ -406,13 +406,12 @@ section {
 
 .bios > div {
 	background-color: #FFFFFF;
-	/*margin-bottom: 40px;*/
-	/*padding-bottom: 30px;*/
-	padding: 34px 20px 40px 20px;
-	/*flex-basis: 20%;*/
+	/*padding: 34px 20px 40px 20px; with extra info*/
 	margin: 0px 10px 40px 10px;
 	opacity: 0;
-	width: 300px;
+	/*width: 300px; with extra info*/
+	width: 240px;
+	padding: 34px 15px 34px 15px;
 }
 
 .bios > .is-visible {

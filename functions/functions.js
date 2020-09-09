@@ -450,7 +450,7 @@ let createProfiles = function() {
 
 		// 	textBox.appendChild(title);
 		// 	textBox.appendChild(inst);
-		// }); //delete css?
+		// }); //delete css and array info?
 
 		card.appendChild(cv);
 
