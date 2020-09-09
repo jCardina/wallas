@@ -422,7 +422,7 @@ let createProfiles = function() {
 		let name = document.createElement("h4");
 		name.textContent = profile.name;
 
-		let textBox = document.createElement("div");
+		// let textBox = document.createElement("div");
 
 
 		let cv = document.createElement("button");
@@ -436,21 +436,21 @@ let createProfiles = function() {
 		container.appendChild(card);
 		card.appendChild(photo);
 		card.appendChild(name);
-		card.appendChild(textBox);
+		// card.appendChild(textBox);
 
-		profile.description.forEach(elm => {
+		// profile.description.forEach(elm => {
 
-			let title = document.createElement("p");
-			title.textContent = elm.title;
+		// 	let title = document.createElement("p");
+		// 	title.textContent = elm.title;
 
-			let inst = document.createElement("p");
-			inst.textContent = elm.inst;
-			inst.className = "institution";
+		// 	let inst = document.createElement("p");
+		// 	inst.textContent = elm.inst;
+		// 	inst.className = "institution";
 
 
-			textBox.appendChild(title);
-			textBox.appendChild(inst);
-		});
+		// 	textBox.appendChild(title);
+		// 	textBox.appendChild(inst);
+		// }); //delete css?
 
 		card.appendChild(cv);
 
