@@ -24,10 +24,10 @@
 
 </head>
 
-<body>
+<body class="default">
 
 	<header id="topBar">
-		<nav class="nav">
+		<nav class="nav default">
 			<div class="logo" id="logo">
 				<img src="./images/logo.jpg" alt="Wallas - Traducción & Accesibilidad" title="Wallas - Traducción & Accesibilidad" />
 			</div>
@@ -43,6 +43,9 @@
 				<a class="menuItem" href="#nosotros">Nosotros</a>
 				<a class="menuItem" href="#contacto">Contacto</a>
 			</div>
+			
+			<button id="darkmode" title="Modo Oscuro" aria-label="Modo Oscuro"><i class="fas fa-moon"></i></button>
+
 		</nav>
 	</header>
 
@@ -61,13 +64,13 @@
 
 			<div id="servicesCont">
 				<h3>Traducción audiovisual</h3>
-				<div class="services" id="tav"></div>
+				<div class="services default" id="tav"></div>
 
 				<h3>Accesibilidad</h3>
-				<div class="services" id="access"></div>
+				<div class="services default" id="access"></div>
 				
 				<h3>Textos no audiovisuales</h3>
-				<div class="services" id="texts"></div>
+				<div class="services default" id="texts"></div>
 			</div>
 
 		</section>
@@ -81,7 +84,7 @@
 			<div>
 				<h3>Quiénes somos</h3>
 
-				<div class="bios" id="biosCont"></div>
+				<div class="bios default" id="biosCont"></div>
 				
 			</div>
 
@@ -94,7 +97,7 @@
 					<h3><i class="fas fa-phone-alt" aria-hidden="true"></i> +54 9 11 1234-5678</h3>
 					<h3><i class="fa fa-envelope" aria-hidden="true"></i> contacto@wallastav.com.ar</h3>
 				</div>
-				<div>
+				<div class="default">
 					<form id="contactForm" name="formulario de contacto">
 						
 						<input class="inp" id="inputName" name="Nombre" aria-label="Nombre" type="text" placeholder="Nombre" minlength="2" maxlength="40" pattern="^(?=.*[A-Za-z])[a-zA-ZñÑáéíóúÁÉÍÓÚü][a-zA-ZñÑáéíóúÁÉÍÓÚü' ]{0,38}[a-zA-ZñÑáéíóúÁÉÍÓÚü]$" title="El nombre debe tener entre 2 y 40 caracteres. No se permiten números ni caracteres especiales excepto vocales acentuadas, 'ñ' y apóstrofe." required>

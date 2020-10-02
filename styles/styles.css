@@ -11,8 +11,10 @@ body, html {
 	font-family: 'Roboto', sans-serif;
 	color: #060A24;
 	overflow-x: hidden;
+	 
 
 }
+
 
 .menuBtn {
 	height: 25px;
@@ -73,6 +75,8 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	background-color: #FFFFFF;
+	position: relative;
+	z-index: 1;
 }
 
 
@@ -92,7 +96,8 @@ h1 {
 
 
 .menu {
-	margin: 0 40px 0 0;
+	/*margin: 0 40px 0 0;*/
+	margin: 0 88px 0 0;
 }
 
 
@@ -154,7 +159,8 @@ nav label {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: -1;
+	z-index: 0;
+	/*z-index: -1;*/
 
 }
 
@@ -258,6 +264,8 @@ nav label {
 	height: 280px;
 	width: 320px;
 	transition: all 0.5s;
+	border: 2px solid transparent;
+	/*transition: background-color, opacity, height 0.5s;*/
 
 }
 
@@ -300,6 +308,7 @@ nav label {
 	animation: pop-in 0.4s ease-in;
 
 }*/
+
 
 .services .is-visible:last-child {
 	animation: pop-in 0.6s ease-in;
@@ -456,7 +465,7 @@ section {
 	text-align: left;
 }
 
-.bios button, form button, #success button {
+.bios button, form button, #success button, #darkmode {
 	border: none;
 	display: inline-block;
 	padding: 10px 16px;
@@ -469,6 +478,14 @@ section {
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-size: 11px;
+}
+
+#darkmode {
+	padding: 8px 8px;
+	text-indent: 1px;
+	position: absolute;
+	top: 22px;
+	left: calc(100% - 78px);
 }
 
 .bios button:hover, form button:hover, form button:disabled, #success button:hover {
@@ -583,4 +600,23 @@ form button {
 
 footer i:hover {
 	color: #2597cc;
+}
+
+/*DARK MODE*/
+
+body.darkmode, .nav.darkmode, .bios.darkmode > div {
+	background-color: #000000;
+}
+
+.darkmode .one, .darkmode .two, .darkmode .three {
+	background-color: #FFFFFF;
+}
+
+.darkmode h2, .darkmode h3, .darkmode h4, .darkmode p, .darkmode a, .darkmode input, .darkmode textarea, .services.darkmode .moreInfo {
+	color: #FFFFFF;
+}
+
+.services.darkmode div.selected {
+	background-color: #000000;
+	border-color: #FFFFFF;
 }

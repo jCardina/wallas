@@ -27,7 +27,7 @@ and (hover: none) {
 		color: rgba(70,142,175,0.86);
 	}
 
-	.services div, .hero-text button, button.menuBtn, .bios button {
+	.services div, .hero-text button, button.menuBtn, .bios button, #darkmode {
 		cursor: default;
 	}
 
@@ -116,6 +116,12 @@ and (max-width: 768px) {
 	.logo img {
 		height: 50px;
 
+	}
+
+	#darkmode {
+		padding: 6px 6px;
+		top: 13px;
+		left: calc(100% - 90px);
 	}
 
 

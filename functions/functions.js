@@ -563,6 +563,18 @@ setTimeout(function() {
 	});
 }, 100);
 
+
+
+document.getElementById("darkmode").addEventListener("click", function(event) {
+	
+	let elements = document.querySelectorAll(".default");
+
+	for(i = 0; i < elements.length; i++) {
+		elements[i].classList.toggle("darkmode");
+	}
+
+});
+
 //add on load
 
 // add auto-close menu /services and on display none?
