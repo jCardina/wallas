@@ -285,7 +285,7 @@ let createProfiles = function() {
 	let profiles = [
 	{
 		name: "Natalia Tamini",
-		photo: "./images/placeholder.jpg",
+		photo: "./images/tamini.jpg",
 		description: [
 		{
 			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
@@ -572,6 +572,17 @@ document.getElementById("darkmode").addEventListener("click", function(event) {
 	for(i = 0; i < elements.length; i++) {
 		elements[i].classList.toggle("darkmode");
 	}
+
+	let logo = document.querySelector("#logo img");
+
+	if(logo.classList.contains("darkmode")) {
+
+		logo.src = "./images/logov2.png";
+
+	} else {
+		logo.src = "./images/logov3.png";
+	}
+
 
 });
 
