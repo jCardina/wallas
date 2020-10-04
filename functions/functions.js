@@ -577,10 +577,10 @@ document.getElementById("darkmode").addEventListener("click", function(event) {
 
 	if(logo.classList.contains("darkmode")) {
 
-		logo.src = "./images/logov2.png";
+		logo.src = "./images/logov5.png";
 
 	} else {
-		logo.src = "./images/logov3.png";
+		logo.src = "./images/logov4.png";
 	}
 
 
