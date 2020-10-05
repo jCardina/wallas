@@ -415,7 +415,7 @@ let createProfiles = function() {
 
 		let photo = document.createElement("img");
 		photo.alt = profile.name;
-		photo.title = profile.name;
+		// photo.title = profile.name;
 		photo.src = profile.photo;
 		photo.className = "profilePic";
 
