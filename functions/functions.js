@@ -583,10 +583,39 @@ document.getElementById("darkmode").addEventListener("click", function(event) {
 		logo.src = "./images/logov4.png";
 	}
 
+	if(document.body.classList.contains("darkmode")) {
+		localStorage.lightmode = "false";
+	} else {
+		localStorage.lightmode = "true";
+	}
+
+
+});
+
+
+
+window.addEventListener("load", function(e) {
+
+
+
+if(localStorage.lightmode) {
+
+	let lightmode = localStorage.getItem("lightmode");
+
+	if(lightmode == "false") {
+
+		document.getElementById("darkmode").click();
+	}
+
+} else {
+
+	localStorage.setItem("lightmode", "true");
+
+}
 
 });
 
 //add on load
 
 // add auto-close menu /services and on display none?
-document.getElementById("darkmode").click();
+// document.getElementById("darkmode").click();
