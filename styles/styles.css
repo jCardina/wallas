@@ -621,3 +621,7 @@ body.darkmode, .nav.darkmode, .bios.darkmode > div {
 	border-color: #FFFFFF;
 }
 
+.drakmode button {
+	background-color: #2597cc;
+}
+
