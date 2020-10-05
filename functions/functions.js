@@ -589,3 +589,4 @@ document.getElementById("darkmode").addEventListener("click", function(event) {
 //add on load
 
 // add auto-close menu /services and on display none?
+document.getElementById("darkmode").click();
