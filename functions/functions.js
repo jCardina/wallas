@@ -286,122 +286,122 @@ let createProfiles = function() {
 	{
 		name: "Natalia Tamini",
 		photo: "./images/tamini.jpg",
-		description: [
-		{
-			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
-			inst:'Universidad del Salvador'
-		},
-		{
-			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
-			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		}
-		],
+		// description: [
+		// {
+		// 	title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+		// 	inst:'Universidad del Salvador'
+		// },
+		// {
+		// 	title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+		// 	inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// }
+		// ],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Valentina Oliva",
 		photo: "./images/placeholder.jpg",
-		description: [
-		{
-			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
-			inst:'Universidad del Museo Social Argentino'
-		},
-		{
-			title:'Profesora de italiano',
-			inst:''
-		},
-		{
-			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
-			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		}
-		],
+		// description: [
+		// {
+		// 	title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+		// 	inst:'Universidad del Museo Social Argentino'
+		// },
+		// {
+		// 	title:'Profesora de italiano',
+		// 	inst:''
+		// },
+		// {
+		// 	title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+		// 	inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// }
+		// ],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Camila Dulce",
 		photo: "./images/placeholder.jpg",
-		description: [
-		{
-			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
-			inst:'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		},
-		{
-			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
-			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		}
-		],
+		// description: [
+		// {
+		// 	title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+		// 	inst:'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// },
+		// {
+		// 	title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+		// 	inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// }
+		// ],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "María Fernanda Ortiz",
 		photo: "./images/placeholder.jpg",
-		description: [
-		{
-			title:'##Traductora Técnica, Científica y Literaria en idioma inglés',
-			inst:'##ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		},
-		{
-			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
-			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		}
-		],
+		// description: [
+		// {
+		// 	title:'##Traductora Técnica, Científica y Literaria en idioma inglés',
+		// 	inst:'##ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// },
+		// {
+		// 	title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+		// 	inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// }
+		// ],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Laura Wainfeld",
-		photo: "./images/placeholder.jpg",
-		description: [
-		{
-			title:'Traductora Técnica, Científica y Literaria en idioma francés',
-			inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
-		},
-		{
-			title:'Profesora de francés',
-			inst:'IS del Profesorado “Dr. Joaquín V. González”'
-		},
-		{
-			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
-			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		}
-		],
+		photo: "./images/wainfeld.jpg",
+		// description: [
+		// {
+		// 	title:'Traductora Técnica, Científica y Literaria en idioma francés',
+		// 	inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
+		// },
+		// {
+		// 	title:'Profesora de francés',
+		// 	inst:'IS del Profesorado “Dr. Joaquín V. González”'
+		// },
+		// {
+		// 	title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+		// 	inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// }
+		// ],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Diana Calfa",
 		photo: "./images/placeholder.jpg",
-		description: [
-		{
-			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
-			inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
-		},
-		{
-			title:'Traductora Pública en idioma inglés',
-			inst:'Universidad de Buenos Aires'
-		},
-		{
-			title:'Traductora Pública en idioma portugués',
-			inst:'Universidad de Buenos Aires'
-		},
-		{
-			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
-			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		}
-		],
+		// description: [
+		// {
+		// 	title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+		// 	inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
+		// },
+		// {
+		// 	title:'Traductora Pública en idioma inglés',
+		// 	inst:'Universidad de Buenos Aires'
+		// },
+		// {
+		// 	title:'Traductora Pública en idioma portugués',
+		// 	inst:'Universidad de Buenos Aires'
+		// },
+		// {
+		// 	title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+		// 	inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// }
+		// ],
 		cv: "./docs/placeholder-cv.pdf"
 	},
 	{
 		name: "Carolina Jiménez",
 		photo: "./images/placeholder.jpg",
-		description: [
-		{
-			title:'Traductora Técnica, Científica y Literaria en idioma inglés',
-			inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
-		},
-		{
-			title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
-			inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
-		}
-		],
+		// description: [
+		// {
+		// 	title:'Traductora Técnica, Científica y Literaria en idioma inglés',
+		// 	inst:'IES en Lenguas Vivas “Juan Ramón Fernández”'
+		// },
+		// {
+		// 	title: 'Especialización Superior en Textos Audiovisuales y Accesibilidad',
+		// 	inst: 'ENS en Lenguas Vivas “Sofía E. B. de Spangenberg”'
+		// }
+		// ],
 		cv: "./docs/placeholder-cv.pdf"
 	}
 

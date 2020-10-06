@@ -431,7 +431,9 @@ section {
 
 .profilePic {
 	border-radius: 50%;
+	object-fit: cover;
 	height: 140px;
+	width: 133px;
 }
 
 .bios h4 {
@@ -441,7 +443,7 @@ section {
 	text-align: center;
 }
 
-.bios p {
+/*.bios p {
 	font-size: 13px;
 	max-width: 246px;
 	display: block;
@@ -449,21 +451,20 @@ section {
 	text-align: justify;
 	font-weight: bold;
 	align-self: flex-start;
-}
+}*/
 
-.bios > div div {
-	/*padding-left: 10px;*/
-	/*padding-right: 10px;*/
+/*.bios > div div {
+	
 	min-height: 180px;
-}
+}*/
 
-.bios .institution {
+/*.bios .institution {
 	font-weight: normal;
 	font-size: 11px;
 	margin-bottom: 6px;
 	color: #333333;
 	text-align: left;
-}
+}*/
 
 .bios button, form button, #success button, #darkmode {
 	border: none;
