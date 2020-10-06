@@ -71,29 +71,35 @@ let createServices = function() {
 		{
 			icon: "far fa-file-alt",
 			title: "Subtitulado",
-			description: "Servicios de transcripción, traducción y temporización",
+			description: "Transcripción, traducción y temporización",
 			text: [
-			{paragraph: "Producimos subtítulos electrónicos para todo tipo de contenido audiovisual de cine,  televisión y plataformas de internet. Contamos con un equipo de traductores, editores y correctores, especializados en traducción audiovisual y generación de subtítulos en múltiples extensiones."},
-			{paragraph: "Nuestra oferta multilingüe incluye los siguientes idiomas: español, inglés, francés, portugués e italiano."}
+			{paragraph: "Subtitulado de series, películas de ficción o documentales, programas de TV, videos informativos, institucionales, didácticos o publicitarios, conferencias, entrevistas, focus group, entre otros."}
+			// {paragraph: "Nuestra oferta multilingüe incluye los siguientes idiomas: español, inglés, francés, portugués e italiano."}
 			]
 		},
 		{
 			icon: "fa fa-film",
 			title: "Guiones para doblaje",
-			description: "Servicios de traducción y adaptación para doblaje",
-			text: [{paragraph: ""}]
+			description: "Traducción y adaptación para doblaje",
+			text: [
+			{paragraph: "Transcripción, cuando no se disponga de guion, traducción y adaptación para doblaje."},
+			{paragraph: "Elaboración de guiones para ser utilizados en la sala de doblaje, que respetan en todo momento la sincronía entre el nuevo audio y el video original."}
+			]
 		},
 		{
 			icon: "fas fa-gamepad",
 			title: "Localización de videojuegos",
-			description: "Servicios de localización de videojuegos y plataformas en línea",
-			text: [{paragraph: ""}]
+			description: "Localización de videojuegos y plataformas en línea",
+			text: [{paragraph: "Adaptación de productos o servicios a un mercado específico, teniendo en cuenta aspectos culturales, sociales y técnicos del mercado de destino."}]
 		},
 		{
 			icon: "far fa-file-code",
 			title: "Localización de sitios web",
-			description: "Servicios de localización de sitios y páginas web",
-			text: [{paragraph: ""}]
+			description: "Localización de sitios y páginas web",
+			text: [
+			{paragraph: "Adaptación de productos o servicios a un mercado específico, teniendo en cuenta aspectos culturales, sociales y técnicos del mercado de destino."},
+			{paragraph: "Se trabaja en contacto estrecho con el cliente para garantizar una traducción acorde con sus necesidades y en el menor tiempo posible, sin descuidar la calidad del resultado."}
+			]
 		}
 		]
 	},
@@ -102,18 +108,18 @@ let createServices = function() {
 		items: [
 		{
 			icon: "fas fa-closed-captioning",
-			title: "SDPPS",
-			description: "Servicios de subtitulado descriptivo para personas sordas o hipoacúsicas y subtitulado oculto",
+			title: "SPPS",
+			description: "Subtitulado descriptivo para personas sordas o hipoacúsicas y subtitulado oculto",
 			text: [
-			{paragraph: "Ofrecemos un servicio de subtítulos ocultos de excelente calidad en español, inglés, portugués y francés en el tiempo que usted lo precise."},
-			{paragraph: "Buscamos hacer su mensaje realmente accesible siguiendo los requerimientos necesarios para lograr un producto de excelencia."}
+			{paragraph: "Elaboración y temporización de subtítulos ocultos de excelente calidad."},
+			{paragraph: "El objetivo es que el mensaje sea realmente accesible, siguiendo los requerimientos necesarios para lograr un producto de excelencia."}
 			]
 		},
 		{
 			icon: "fas fa-comments",
 			title: "Guiones de audiodescripción",
-			description: "Servicios de elaboración de guiones de audiodescripción para personas ciegas o con baja visión",
-			text: [{paragraph: "Adaptamos contenidos audiovisuales  para personas ciegas o con baja visión. A través de esta herramienta, es posible activar una pista de audio alternativa que facilita la comprensión de una escena con la finalidad de proporcionar información sobre la situación espacial, los gestos, actitudes, paisajes y vestuario."}]
+			description: "Elaboración de guiones de audiodescripción para personas ciegas o con baja visión",
+			text: [{paragraph: "A través de esta herramienta, es posible activar una pista de audio alternativa que facilita la comprensión de una escena con la finalidad de proporcionar información sobre la situación espacial, los gestos, actitudes, paisajes y vestuario."}]
 		}	
 		]
 	},
@@ -122,21 +128,24 @@ let createServices = function() {
 		items: [
 		{
 			icon: "fas fa-language",
-			title: "Traducción de textos",
-			description: "Servicios de traducción de textos técnico-científicos y literarios",
-			text: [{paragraph: ""}]
+			title: "Traducción de textos técnico-científicos y literarios",
+			description: "Traducción de textos de todo tipo y formato",
+			text: [{paragraph: "Traducción de manuales, tesis, artículos, novelas, folletos, entre otros."}]
 		},
 		{
 			icon: "fas fa-balance-scale",
 			title: "Traducción pública",
-			description: "Servicios de traducción de textos legales",
-			text: [{paragraph: ""}]
+			description: "Traducción de textos legales con firma certificada",
+			text: [
+			{paragraph: "Traducción de textos de diferentes áreas, sellada y firmada por un traductor público matriculado en el Colegio de Traductores Públicos de la Ciudad de Buenos Aires o de la Provincia de Buenos Aires."},
+			{paragraph: "La firma del traductor certifica el contenido de la traducción para que los documentos tengan validez ante las autoridades nacionales o extranjeras correspondientes."}
+			]
 		},
 		{
 			icon: "fas fa-book-open",
 			title: "Revisión de textos",
-			description: "Servicios de revisión y corrección de textos",
-			text: [{paragraph: ""}]
+			description: "Revisión y corrección de textos",
+			text: [{paragraph: "Revisiones ortográficas, gramaticales y de estilo."}]
 		}
 		]
 	}

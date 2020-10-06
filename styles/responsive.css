@@ -39,7 +39,7 @@ and (max-width: 999px) {
 
 	.services h3 {
 		font-size: 18px;
-		text-align: center;
+		/*text-align: center;*/
 	}
 
 	.contact_details {
