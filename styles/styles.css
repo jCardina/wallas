@@ -642,6 +642,19 @@ body.darkmode, .nav.darkmode, .bios.darkmode > div {
 	color: #FFFFFF;
 }
 
+.darkmode ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
+.darkmode :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FFFFFF;
+}
+
+.darkmode ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FFFFFF;
+}
+
 .services.darkmode div.selected {
 	background-color: #000000;
 	border-color: #FFFFFF;
