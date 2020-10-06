@@ -615,6 +615,30 @@ if(localStorage.lightmode) {
 
 });
 
+
+document.getElementById("seeBios").addEventListener("click", function(e) {
+
+	let icon = document.querySelector(".seeBios i");
+	let container = document.querySelector(".bios");
+
+	if(icon.classList.contains("fa-angle-up")) {
+
+		icon.classList.remove("fa-angle-up");
+		icon.classList.add("fa-angle-down");
+
+		container.style.display = "flex";
+
+	} else {
+
+		icon.classList.add("fa-angle-up");
+		icon.classList.remove("fa-angle-down");
+
+		container.style.display = "none";
+
+	}
+
+});
+
 //add on load
 
 // add auto-close menu /services and on display none?

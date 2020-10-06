@@ -15,6 +15,10 @@ body, html {
 
 }
 
+button {
+	font-family: 'Roboto', sans-serif;
+}
+
 
 .menuBtn {
 	height: 25px;
@@ -206,7 +210,7 @@ nav label {
 	border-radius: 10px;
 	text-align: center;
 	cursor: pointer;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-size: 16px;
@@ -407,11 +411,30 @@ section {
 	text-align: center;
 	font-size: 38px;
 	margin-top: 80px;
+	color: #333544;
 
+}
+
+.seeBios {
+	margin: auto;
+	margin-top: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	font-size: 36px;
+	/*background-color: rgba(96, 195, 216, 0.73);*/
+	background-color: rgb(37,151,204);
+	color: #FFFFFF;
+	border-radius: 5px;
+	font-weight: bold;
+	border: none;
+	padding: 2px;
+	width: 220px;
 }
 
 .bios {
 	padding-top: 40px;
+	display: none;
 }
 
 .bios > div {
@@ -475,7 +498,7 @@ section {
 	border-radius: 10px;
 	text-align: center;
 	cursor: pointer;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-size: 11px;
@@ -613,7 +636,7 @@ body.darkmode, .nav.darkmode, .bios.darkmode > div {
 	background-color: #FFFFFF;
 }
 
-.darkmode h2, .darkmode h3, .darkmode h4, .darkmode p, .darkmode a, .darkmode input, .darkmode textarea, .services.darkmode .moreInfo {
+.darkmode h2, .darkmode h3, .darkmode h4, .darkmode p, .darkmode a, .darkmode input, .darkmode textarea, .services.darkmode .moreInfo, .darkmode #nosotros h3 {
 	color: #FFFFFF;
 }
 
